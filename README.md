@@ -1,1 +1,3 @@
 # homework4
+
+This application is a timed coding multiple choice quiz. When the URL to the application is opened it displays a start button when the start button is clicked it takes the user to the first multiple choice question. When you click the right answer it will light up green showing that answer chosen by the user is correct and the wrong answer will turn red. To go to the next question the user will click next, giving the user a chance to review the question before moving forward with the next question. If the user would like to retake the quiz the questions will be displayed in random order.
