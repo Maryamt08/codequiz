@@ -48,7 +48,7 @@ var timerInterval;
 var score = 0;
 var correct;
 
-function generateQuizQuestion(){
+function generateQuestion(){
     if (currentQuestionIndex === finalQuestionIndex){
         return showScore();
     } 
@@ -63,7 +63,7 @@ function generateQuizQuestion(){
 // Start Quiz
 function startQuiz(){
     startQuizDiv.style.display = "none";
-    generateQuizQuestion();
+    generateQuestion();
 
     timerInterval = setInterval(function() {
         timeLeft--;
@@ -88,11 +88,11 @@ function checkAnswer(answer){
         score++;
         alert("Correct!");
         currentQuestionIndex++;
-        generateQuizQuestion();
+        generateQuestion();
     }else if (answer !== correct && currentQuestionIndex !== finalQuestionIndex){
         alert("Incorrect.")
         currentQuestionIndex++;
-        generateQuizQuestion();
+        generateQuestion();
     }else{
         showScore();
     }
